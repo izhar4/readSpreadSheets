@@ -1,0 +1,29 @@
+path : "http://localhost:3000/getData/11q7RWcztWpQBCKpkOJmRSYcV0wMhfx8xvqAdrNJjnHI/sheet1",
+payload : {
+    "range": "Sheet1!A1:Z1000",
+    "majorDimension": "ROWS",
+    "values": [
+        [
+            "Name",
+            "Adress",
+            "Designation"
+        ]
+    ]
+}
+request: getData
+
+
+path: "http://localhost:3000/saveData",
+payload : {
+	"sheetId":"11q7RWcztWpQBCKpkOJmRSYcV0wMhfx8xvqAdrNJjnHI",
+	"range":"Sheet1",
+	"values":[ ["izhar", "meerut", "Manager"], ["amir", "jaipur", "developer"]]
+}
+request : post
+
+path: "http://localhost:3000/updateData"
+payload: {
+	"sheetId":"11q7RWcztWpQBCKpkOJmRSYcV0wMhfx8xvqAdrNJjnHI",
+	"range":"Sheet1!A3:C",
+	"values":[ ["izhar", "meerut", "Manager"], ["amir", "jaipur", "developer"]]
+}
